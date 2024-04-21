@@ -1,0 +1,79 @@
+@import './osnove';
+
+@media only screen and (max-width: 1175px)
+{
+    .naslolv{
+        font-size: 300%;
+    }
+    #about {
+        p{
+            font-size: 250%;
+        }
+    }
+    .slike{
+        img{
+            height: 40%;
+            width: 80%;
+        }
+        p{
+            font-size: x-large;
+        }
+    }
+}
+
+@media only screen and (max-width: 885px)
+{
+    .naslolv{
+        font-size: 250%;
+        padding-left: 40%;
+    }
+    #about {
+        p{
+            font-size: 200%;
+        }
+    }
+    .slike{
+        p{
+            font-size: large;
+        }
+    }
+    .servisi{
+        h2{
+            font-size: 110%;
+        }
+        p{
+            font-size: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 796px)
+{
+    nav{
+        margin-left: 15%;
+    }
+}
+@media only screen and (max-width: 667px)
+{
+    #home {
+        h2{
+          font-size: 270%;
+    
+        }
+        h1{
+          font-size: 290%;
+        }
+    }
+    .naslolv{
+        font-size: 200%;
+    }
+    #services{
+        display:flex ;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .slike{
+        p{
+            font-size: medium;
+        }
+    }
+}
