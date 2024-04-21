@@ -1,0 +1,208 @@
+@import './osnove';
+@import './main';
+@mixin Forma{
+    border: 2px solid #000;
+    padding: 18px 10px;
+    width: 100%;
+    background-color: #880505;
+    margin-bottom: 5px;
+    color: $letter-color;
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../img/pozadina.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #08080884 ;
+    padding: 10px 0;
+    padding-right: 100px;
+    
+}
+#logo{
+     img{
+        height: 75px; 
+        width: 75px;
+     }
+}
+
+nav {
+    ul {
+        list-style: none;
+        text-align: right;
+        margin-top: -50px;
+        padding-bottom: 20px;
+        li {
+             display: inline-block;
+             margin: 0 10px;
+            font-size: 30px;
+            border-left: 3px solid #000000;
+            a {
+                text-decoration: none;
+                 color: $letter-color;
+              }
+           }
+       }
+}
+
+nav{
+    ul{
+        li:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+/*Home*/
+#home {
+    background-color: $main-color;
+    margin-top: 180px;
+    width: 90%;
+    margin-left: 5%;
+    border: 5px solid #000;
+    h2{
+      color: $letter-color;
+      font-size: 300%;
+
+    }
+    h1{
+      color: $letter-color;
+      font-size: 310%;
+    }
+}
+/*about me*/
+.naslolv{
+    background-color: $main-color;
+    margin-top: 220px;
+    font-size: 330%;
+    padding-left: 45%;
+    padding-top: 20px;
+    color: $letter-color;
+}
+#about {
+    background-color: $main-color;
+    display:flex ;
+    align-items: center;
+    p{
+        flex: 1;
+        font-size: 300%;font-weight: bold;
+        color: $letter-color;
+    }
+    img{
+        margin-right: 10px;
+        height: 40%;
+        width: 20%;
+        margin-left: 20px;
+        box-shadow: 0px 0px 25px #fff;
+    }
+}
+/*servisi*/
+#services{
+    background-color: $second-color;
+    display:flex ;
+    align-items: center;
+}
+.servisi{
+    flex: 1;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+    img{
+        height: 40%;
+        width: 40%;
+    }
+    p{
+        font-size: 120%;
+    }
+}
+/*projekti*/
+#projects{
+    background-color: #080808e8;
+    display:flex ;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.slike{
+    margin-top: 30px;
+    img{
+        height: 50%;
+        width: 90%;
+        flex: 1;
+        border: 3px solid #fff;
+        margin: 10px;
+    }
+    p{
+        color: $letter-color;
+        font-size: xx-large;
+        border-bottom: 2px solid #fff;
+        width: 20%;
+        margin-left: 40%;
+    }
+}
+.slike{
+    img:hover{
+        transform: scale(0.9);
+    }
+}
+/*kontakt*/
+#contact{
+    background-color: $second-color;
+    padding-left: 50px;
+    display: flex;
+}
+.info{
+    flex: 1;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+input{
+    @include Forma;
+}
+textarea{
+    @include Forma;
+}
+button{
+    @include Forma;
+}
+.contact-wrapper{
+    img{
+        width: 10%;
+        height: 10%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+/*footer*/
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            a{
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+#footer-block{
+    margin-top: 10px;
+    color: $letter-color;
+}
